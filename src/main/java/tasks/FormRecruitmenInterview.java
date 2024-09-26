@@ -23,12 +23,13 @@ public class FormRecruitmenInterview implements Task {
 
 
     public FormRecruitmenInterview(String randomText, String ValueInitial, String Randomdate){
+     //Encapsulamiento
      this.randomText = randomText;
      this.ValueInitial=ValueInitial;
      this.Randomdate=Randomdate;
     }
 
-
+    //Poliformismo
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
@@ -60,6 +61,7 @@ public class FormRecruitmenInterview implements Task {
         );
     }
 
+    //Instanciamiento para evitar el new
     public static FormRecruitmenInterview dataInter() {
         String randomText = generateRandomString(5);
         String ValueInitial ="R";

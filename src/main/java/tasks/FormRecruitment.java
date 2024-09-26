@@ -67,6 +67,7 @@ public class FormRecruitment implements Task{
         );
     }
 
+    //public static FormRecruitment datosIniciales(String name, String secondname, String surname, String Email){
     public static FormRecruitment datosIniciales(String name, String secondname, String surname, String Email){
         String randonName= Functions.generateRandomString(5);
         String randomDate= Functions.generateRandomDate();

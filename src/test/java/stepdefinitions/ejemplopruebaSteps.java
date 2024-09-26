@@ -51,7 +51,7 @@ public class ejemplopruebaSteps {
     public void seValidaTodosLosDatosDiligenciadosEnElFormulario() {
         theActorInTheSpotlight().should(
          seeThat(the(INPUT_VACANCY_HIRIN), isPresent()),
-         seeThat(the(INPUT_VACANCY_HIRIN), containsText("Payroll Administratorse"))
+         seeThat(the(INPUT_VACANCY_HIRIN), containsText("Payroll Administrator"))
          //seeThat(the(INPUT_VACANCY_HIRIN), isEnabled())
         );
 //        theActorInTheSpotlight().should(

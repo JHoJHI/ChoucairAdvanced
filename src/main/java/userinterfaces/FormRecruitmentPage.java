@@ -4,9 +4,10 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
+//Herencia
 public class FormRecruitmentPage extends PageObject {
 
-    public static final Target INPUT_FIRST_NAME= Target.the("Campo para diligenciar el nombre del candidato ").located(By.name("firstName"));
+public static final Target INPUT_FIRST_NAME= Target.the("Campo para diligenciar el nombre del candidato ").located(By.name("firstName"));
     public static final Target INPUT_MIDDLE_NAME= Target.the("Campo para diligenciar el segundo nombre del candidato").located(By.name("middleName"));
     public static final Target INPUT_LAST_NAME= Target.the("Campo para diligenciar apellido del candidato").located(By.name("lastName"));
     public static final Target INPUT_EMAIL= Target.the("Campo para diligenciar email").locatedBy("//div[contains(@class, 'oxd-input-group__label-wrapper')]/following-sibling::div//input[@class='oxd-input oxd-input--active']");
